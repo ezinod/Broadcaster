@@ -1,0 +1,20 @@
+{
+  "name": "andela_cycle_13_prebootcamp_challenge_2",
+  "version": "1.0.0",
+  "description": "my diary",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Olivier NIYOMUGABO",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^14.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12",
+    "nodemon": "^2.0.0"
+  }
+}

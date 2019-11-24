@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "5dd97c23480ff03fdc78c3f3",
+    "firstName": "Olivier",
+    "lastName": "Niyomugabo",
+    "email": "nivierlos@gmail.com",
+    "password": "$2a$10$HDYphSqBCpCZPFVvy3IOxO8k.SnWg6QF48i80sfdMlLcdBx3PvrdC"
+  },
+  {
+    "_id": "5dd985f79cbfdc421c70196c",
+    "firstName": "Olivier",
+    "lastName": "Nymgb",
+    "email": "nivierlo1@gmail.com",
+    "password": "$2a$10$6iirw.Udyg5oKivu2DAnYueqOf7LC5mMf.yc11uii7hDVr53YGJPi"
+  }
+]
