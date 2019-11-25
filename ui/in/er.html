@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="../style.css">
+		<title>Broadcaster | Update Intervention</title>
+	</head>
+	<body>
+		<nav class="navbar main-navbar">
+			<br>
+			<a href="../index.html" class="brand">Broadcaster</a>
+				<ul class="navbar-ul first-ul">
+					<li class="list-item"><a href="../rf/red-flag.html" class="link-item">Red Flag</a></li>
+					<li class="list-item"><a href="intervention.html" class="link-item active">Interventions</a></li>
+					<li class="list-item"><a href="../index.html" class="link-item">Sign Out</a></li>
+				</ul>
+		</nav>
+		<div class="main-contsiner">
+			<section class="container red-flag" id="redFlag">
+				<div class="navbar sub-navbar">
+					<ul class="navbar-ul second-ul">
+						<li class="list-item second-li rejected"><a href="rejected.html" class="link-item">Rejected</a></li>
+						<li class="list-item second-li resolved"><a href="resolved.html" class="link-item">Resolved</a></li>
+						<li class="list-item second-li ui"><a href="ui.html" class="link-item">Under-Investigation</a></li>
+						<li class="list-item second-li nr"><a href="nr.html" class="link-item active">New-Record</a></li>
+					</ul>
+				</div>
+				<div class="content" id="content">
+					<h2 class="content-header">Update incident</h2>
+                	<form action="#" class="form">
+	                    <div class="form-group">
+	                        <label for="title">Title</label>
+	                        <input type="text" name="title" id="title" class="form-control" placeholder="Head of incident goes here">
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="description">Description</label>
+	                        <textarea name="description" id="description" cols="100" rows="10"></textarea>
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="coverImage">Cover picture</label>
+	                        <input type="file"  id="picture" class="form-control" placeholder="Supporting picture">
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="pickPlace">Pick location</label>
+	                        <input type="file" name="map" id="map" class="form-control" placeholder="Pick location's incident">
+	                    </div>
+	                    <input type="submit" value="Update" class="btn btn-primary form-control">
+	                </form>
+				</div>
+			</section>
+			<section class="footer" id="stickyFooter">
+				<h3 class="footer-title">Designed by <span>Olivier Niyomugabo</span></h3>
+			</dsection>
+		</div>
+	</body>
+</html>

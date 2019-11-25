@@ -12,5 +12,19 @@
     "lastName": "Nymgb",
     "email": "nivierlo1@gmail.com",
     "password": "$2a$10$6iirw.Udyg5oKivu2DAnYueqOf7LC5mMf.yc11uii7hDVr53YGJPi"
+  },
+  {
+    "_id": "5ddbbf28665d2621543bfbd8",
+    "firstName": "new name",
+    "lastName": "john smith",
+    "email": "newuser@gmail.com",
+    "password": "$2a$10$pgkB9f4L6Ewo0rvJbE14yOJBwhg8ydd5ZoH5npmhFIyJrjhRQNXfq"
+  },
+  {
+    "_id": "5ddbbf28665d2621543bfbd8",
+    "firstName": "new name",
+    "lastName": "john smith",
+    "email": "newuser@gmail.com",
+    "password": "$2a$10$pgkB9f4L6Ewo0rvJbE14yOJBwhg8ydd5ZoH5npmhFIyJrjhRQNXfq"
   }
 ]

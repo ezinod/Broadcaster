@@ -34,6 +34,7 @@ router.post('/post/create', async (req, res) =>{
         description: req.body.description,
         image_url: req.body.image_url
     });
+    console.log(post);
 
     try {
         postArrays.push(post);
