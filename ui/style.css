@@ -70,8 +70,8 @@ html, body{
     padding: 0 5px;
 }
 .main-navbar .active{
-    color: #F2F2F2;
-    background-color: #040BDB;
+    color: #0A0EF0;
+    background-color: #F2F2F2;
 }
 .main-navbar .brand{
     color: #F2F2F2;
@@ -90,19 +90,24 @@ html, body{
     color: #0A0EFF;
     background-color: #F2F2F2;
 }
-.container{
-    padding: 35px;
+.brand{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
 }
+
 .sub-navbar{
     background-color: #7B84DB;
-    position: sticky;
     top: 50px;
+    position: fixed;
     height: 25px;
     text-align: center;
-    padding: 0;
-    margin-bottom: 10px;
+    width: 93.5%;
 }
-.sub-navbar .second-ul li{
+.container{
+    margin-top: 70px;
+}
+.sub-navbar .second-ul li, .list-item{
     display: inline;
     text-decoration: none;
     padding: 3px;
@@ -120,11 +125,14 @@ html, body{
 .sub-navbar .active{
     color:#F2F2F2;
 }
+.main-container{
+    padding: 0 35px 10px;
+}
 .content{
     box-shadow:2px 4px 5px #aaa;
     border-radius: 10px;
     text-align: left;
-    padding: 0 20px 20px;
+    padding: 20px 20px;
 }
 .content-header{
     font-size: 16px;
@@ -172,13 +180,14 @@ html, body{
     color: #fff;
 }
 .btn-view{
-    background-color: rgba(13, 243, 232, 0.952);
+    background-color: #0B75FF;
     color: #fff;
 }
 
 .lead{
     padding: 20px;
     color: #333;
+    text-align: justify;
 }
 .form{
     padding: 15px;
@@ -239,38 +248,49 @@ form a{
 }
 /* END OF LOGIN SIGNUP */
 /* FOOTER */
-.footer-li .link-item{
-    text-align: center;
-    color: #F2F2F2;
+
+.post-footer .footer-ul{
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0 35px;
 }
-.footer-li .link-item:hover{
-    text-align: center;
-    background-color: #F2F2F2;
-    color: #0B75FF;
+.footer-li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
-.footer{
-    background-color: #0B75FF;
-    color: #0D0D0D;
-    text-align: center;
-    position: static;
-    height: 35px;
-    top: 100hv;
+.footer-li:nth-child(1) a{
+    background-color: #040BDB;
+    float: left;
+}
+.footer-li:nth-child(1) a:hover{
+    background-color: #FFFFFF;
+    color: #040BDB;
+}
+.footer-li:nth-child(2) a{
+    background-color: red;
+    float: right;
+}
+.footer-li:nth-child(2) a:hover{
+    color: red;
+    background-color: white;
 }
 .footer-title{
-    /*padding: 20px;*/
+    padding: 20px;
     text-align: center;
 }
 .footer-title span{
     color: #F2F2F2;
 }
-#footer{
+#stickyFooter{
     position: relative;
-    bottom: 0;
     height: 60px;
     margin-top: -60px;
     background-color: #0B75FF;
 }
-#footer h3{
+#stickyFooter h3{
+    text-align: center;
     padding-top: 10px;
 }
 /* END OF FOOTER */
@@ -285,6 +305,13 @@ form a{
 }
 /* End of side bar */
 @media(max-width:540px){
+    .sub-navbar{
+        position: fixed;
+        height: 110px;
+    }
+    .content{
+        margin-top: 130px;
+    }
     .sub-navbar .second-ul .list-item{
         display: block;
     }

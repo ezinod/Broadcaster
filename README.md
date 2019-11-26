@@ -1,6 +1,6 @@
  ## Clone my repository for this backend
 ```
-https://github.com/ezinod/my-diary
+https://github.com/ezinod/Broadcaster
 ```
 ```
 > npm install
@@ -55,7 +55,7 @@ https://github.com/ezinod/my-diary
 
 ```
 ### UI Link Example
-[My diary UI](https://ezinod.github.io/Broadcaster/)
+[Broadcaster UI](https://ezinod.github.io/Broadcaster/ui)
 
 ## Tools Used
 
