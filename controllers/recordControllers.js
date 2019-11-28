@@ -10,7 +10,7 @@ const today = `${new Date().getDay()} / ${new Date().getMonth()} / ${new Date().
 exports.addRecord = (req, res) => {
   const validation = new Validate();
   const values = req.body;
-  let postId;
+  let postId = 0;
   const postRecord = JSON.parse(postsData) || [];
   const passed = validation.check(recordModule.RecordCreation, values, postRecord);
   if (passed === true) {
@@ -32,6 +32,7 @@ exports.addRecord = (req, res) => {
       title: values.title,
       user_id: req.id,
       status: values.status,
+      description: values.description,
       type: values.type,
       location: values.location,
       images: values.images,
