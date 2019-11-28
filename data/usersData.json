@@ -1,30 +1,20 @@
 [
   {
-    "_id": "5dd97c23480ff03fdc78c3f3",
-    "firstName": "Olivier",
-    "lastName": "Niyomugabo",
+    "firstName": "NIYOMUGABO",
+    "lastName": "Olivier",
     "email": "nivierlos@gmail.com",
-    "password": "$2a$10$HDYphSqBCpCZPFVvy3IOxO8k.SnWg6QF48i80sfdMlLcdBx3PvrdC"
+    "token": "$-0123456789_abcdfghjkmnpqrstvwxyzABCDEFGHIJKLMNOPQRE",
+    "phoneNumber": "0784735963",
+    "isAdmin": "false",
+    "password": "$2a$10$7QAAqm.ZRUBu51pJcHqLQ.1kwIKFicoluIhC.xO.9TDaVwEl26KXG"
   },
   {
-    "_id": "5dd985f79cbfdc421c70196c",
-    "firstName": "Olivier",
-    "lastName": "Nymgb",
-    "email": "nivierlo1@gmail.com",
-    "password": "$2a$10$6iirw.Udyg5oKivu2DAnYueqOf7LC5mMf.yc11uii7hDVr53YGJPi"
-  },
-  {
-    "_id": "5ddbbf28665d2621543bfbd8",
-    "firstName": "new name",
-    "lastName": "john smith",
-    "email": "newuser@gmail.com",
-    "password": "$2a$10$pgkB9f4L6Ewo0rvJbE14yOJBwhg8ydd5ZoH5npmhFIyJrjhRQNXfq"
-  },
-  {
-    "_id": "5ddbbf28665d2621543bfbd8",
-    "firstName": "new name",
-    "lastName": "john smith",
-    "email": "newuser@gmail.com",
-    "password": "$2a$10$pgkB9f4L6Ewo0rvJbE14yOJBwhg8ydd5ZoH5npmhFIyJrjhRQNXfq"
+    "firstName": "NIYOMUGABO",
+    "lastName": "Olivier",
+    "email": "nivierlos1@gmail.com",
+    "token": "$-0123456789_abcdfghjkmnpqrstvwxyzABCDEFGHIJKLMNOPQRE",
+    "phoneNumber": "0784735956",
+    "isAdmin": "false",
+    "password": "$2a$10$WGsTLUVihcFIl9SFIIRjYe6OMThd6fU0PsmWS/QrhyA7CVn9vd9lC"
   }
 ]

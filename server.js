@@ -15,7 +15,7 @@ const postRoute = require('./routes/postRoutes');
 app.use(express.json());
 
 // Route Middlewares
-app.use('/api/v1', outhRoute);
+app.use('/api/v1/auth', outhRoute);
 app.use('/api/v2', postRoute);
 
 app.get('/', (req, res) =>{
