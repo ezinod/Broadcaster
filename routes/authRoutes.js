@@ -6,7 +6,7 @@ const isAuth = require('../middleware/isAuth');
 
 const route = express.Router();
 
-route.patch('/profile', authController.updateUser);
+route.patch('/profile',isAuth, authController.updateUser);
 route.post('/signin', authController.getLoginAuth);
 route.post('/signup', authController.getRegisterAuth);
 

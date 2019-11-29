@@ -44,16 +44,16 @@ exports.addRecord = (req, res) => {
     fs.writeFile('data/recordsData.json', rawData, (err) =>{
         if(err) throw err;
     });
-    res.status(201).send({
-      status: 201,
+    res.status(200).send({
+      status: 200,
       data: {
         id: postId,
         message: `Created ${values.type} record`,
       },
     });
   } else {
-    res.status(400).send({
-      status: 400,
+    res.status(401).send({
+      status: 401,
       message: passed,
     });
   }
@@ -77,20 +77,20 @@ exports.getOneRecord = (req, res) => {
           },
         });
       } else {
-        res.status(403).send({
-          status: 403,
+        res.status(401).send({
+          status: 401,
           message: 'record you are trying to get is not yours!',
         });
       }
     } else {
-      res.status(404).send({
-        status: 404,
+      res.status(401).send({
+        status: 401,
         message: 'record not found!',
       });
     }
   } else {
-    res.status(404).send({
-      status: 404,
+    res.status(401).send({
+      status: 401,
       message: 'record not found!',
     });
   }
@@ -135,29 +135,29 @@ exports.deleteRedFlag = (req, res) => {
         fs.writeFile('data/recordsData.json', JSON.stringify(data, null, 2), (err) =>{
             if(err) throw err;
         });
-        res.status(204).send({
-          status: 204,
+        res.status(200).send({
+          status: 200,
           data: {
               id: found.id,
               message: 'red-flag record has been deleted!',
           },
         });
       } else {
-        res.status(403).send({
-          status: 403,
-          message: 'trying to delete someone else record',
+        res.status(401).send({
+          status: 401,
+          error: 'trying to delete someone else record',
         });
       }
     } else {
-      res.status(404).send({
-        status: 404,
-        message: 'record not found',
+      res.status(401).send({
+        status: 401,
+        error: 'record is not exists',
       });
     }
   } else {
-    res.status(404).send({
-      status: 404,
-      message: 'no record found',
+    res.status(401).send({
+      status: 401,
+      error: 'no record found',
     });
   }
 };

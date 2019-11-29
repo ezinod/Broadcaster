@@ -1,20 +1,26 @@
 [
   {
-    "firstName": "NIYOMUGABO",
-    "lastName": "Olivier",
-    "email": "nivierlos@gmail.com",
-    "token": "$-0123456789_abcdfghjkmnpqrstvwxyzABCDEFGHIJKLMNOPQRE",
-    "phoneNumber": "0784735963",
+    "id": 1,
+    "firstName": "test",
+    "email": "nivierlo@gmail.com",
+    "phoneNumber": "0457844555",
     "isAdmin": "false",
-    "password": "$2a$10$7QAAqm.ZRUBu51pJcHqLQ.1kwIKFicoluIhC.xO.9TDaVwEl26KXG"
+    "password": "$2a$10$WMQ0WX381NgzzcM2CDE8EO2hxwFIJkVENaXQDFxdkSbwA3WV1Fdsi"
   },
   {
-    "firstName": "NIYOMUGABO",
-    "lastName": "Olivier",
-    "email": "nivierlos1@gmail.com",
-    "token": "$-0123456789_abcdfghjkmnpqrstvwxyzABCDEFGHIJKLMNOPQRE",
-    "phoneNumber": "0784735956",
+    "id": 2,
+    "firstName": "test",
+    "email": "nivierlos@gmail.com",
+    "phoneNumber": "0457844555",
     "isAdmin": "false",
-    "password": "$2a$10$WGsTLUVihcFIl9SFIIRjYe6OMThd6fU0PsmWS/QrhyA7CVn9vd9lC"
+    "password": "$2a$10$SsNwRHFdNS4augYWGLy0PuOygUQjCLaV6fxSoqb6WjybZj/.tgzRe"
+  },
+  {
+    "id": 3,
+    "firstName": "John",
+    "lastName": "Smith",
+    "phoneNumber": "0784735963",
+    "isAdmin": "false",
+    "password": "$2a$10$joU.UDyIIfw7H8ljYAMxQebIZnxS0zKoKyR4DjP8JHPErehpx60ru"
   }
 ]

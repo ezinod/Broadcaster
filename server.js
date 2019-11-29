@@ -8,22 +8,22 @@ const readme = fs.readFileSync('README.md');
 const readmeText = String(readme);
 
 // Import Routes
-const outhRoute = require('./routes/outhUsers');
-const postRoute = require('./routes/postRoutes');
+const authRoute = require('./routes/authRoutes');
+const postRoute = require('./routes/recordRoutes');
 
 // Middlewares
 app.use(express.json());
 
 // Route Middlewares
-app.use('/api/v1/auth', outhRoute);
-app.use('/api/v2', postRoute);
+app.use('/api/v1/auth', authRoute);
+app.use('/api/v1', postRoute);
 
 app.get('/', (req, res) =>{
-    res.send('try some thing like: /api/doc for the official documentation.'
+    res.send('try some thing like /api/v1/...'
 );
 });
 app.get('/api/doc', (req,res) =>{
     res.send(readmeText);
 })
 
-app.listen(port, ()=> console.log("Listening..."+port));
+module.exports = app.listen(port, ()=> console.log(`Listening to ${port}`));

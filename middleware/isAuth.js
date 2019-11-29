@@ -1,13 +1,13 @@
 const jwt = require('jsonwebtoken');
 
 module.exports = (req, res, next) => {
-    const tokenvalue = req.get('Authorization');
+    const tokenvalue = req.header('Authorization');
     try {
-      const decoded = jwt.verify(tokenvalue, '$-0123456789_abcdfghjkmnpqrstvwxyzABCDEFGHIJKLMNOPQRE');
+      const decoded = jwt.verify(tokenvalue, '0123456789abcdfghjkmnpqrstvwxyzABCDEFGHIJKLMNOPQRE');
       if (!decoded) {
         return res.status(401).send({
           status: 401,
-          message: 'request not authentified',
+          message: 'you are not logged in!',
         });
       }
       req.id = decoded.id;
@@ -15,7 +15,9 @@ module.exports = (req, res, next) => {
     } catch (error) {
       return res.status(401).send({
         status: 401,
-        message: 'request not authentified',
+        error: error,
       });
     }
   };
+
+  // '0123456789abcdfghjkmnpqrstvwxyzABCDEFGHIJKLMNOPQRE'
